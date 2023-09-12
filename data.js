@@ -15,9 +15,9 @@ fetch(url+"/rest/v1/test_products",{
 function showData(items){
  console.log(items);
    items.forEach(element => {
-       
+       //tjek om der er noget i kolonnen
         if (element.tags){
-
+// hvis der er noget i kolonnen skal objekterne der indeholder "vand" vises
             if(element.tags.includes("vand"))
             console.log(element);
 
